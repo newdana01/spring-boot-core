@@ -50,7 +50,7 @@ public class ApplicationContextExtendsTest  {
     @Test
     @DisplayName("부모 타입으로 모두 조회 - Object")
     void findByParentTypeObject() {
-        Map<String, DiscountPolicy> beansOfType = ac.getBeansOfType(Object.class);
+        Map<String, Object> beansOfType = ac.getBeansOfType(Object.class);
         assertThat(beansOfType.size()).isEqualTo(2);
     }
 
