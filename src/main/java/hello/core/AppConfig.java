@@ -18,7 +18,7 @@ public class AppConfig {
         return new MemberServiceImpl(memberRepository());
     }
     @Bean
-    public static MemoryMemeberReposotory memberRepository() {
+    public MemoryMemeberReposotory memberRepository() {
         return new MemoryMemeberReposotory();
     }
     @Bean
