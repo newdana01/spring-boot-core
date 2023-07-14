@@ -16,7 +16,7 @@ public class LogDemoController {
 
     @RequestMapping("log-demo")
     @ResponseBody
-    public String logDemo(HttpServletRequest request) {
+    public String logDemo(HttpServletRequest request) throws InterruptedException {
         String requestURL = request.getRequestURL().toString();
         MyLogger myLogger = myLoggerObjectProvider.getObject(); // 이 시점에 myLogger 생성
         myLogger.setRequestURL(requestURL);
